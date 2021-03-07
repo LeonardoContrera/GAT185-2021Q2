@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Projectile
+  - PlayerPackage
+  - HealthBar
   layers:
   - Default
   - TransparentFX
@@ -11,12 +14,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - PlayerWeapon
+  - PlayerNoHit
+  - Enemy
+  - EnemyWeapon
+  - PostProcess
   - 
   - 
   - 
