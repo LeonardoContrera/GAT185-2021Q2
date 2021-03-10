@@ -419,6 +419,7 @@ MonoBehaviour:
   attackTimeMin: 0.5
   attackTimeMax: 2
   meleeDistance: 4
+  playerDieOnSight: 0
 --- !u!33 &4995093009661815221
 MeshFilter:
   m_ObjectHideFlags: 0

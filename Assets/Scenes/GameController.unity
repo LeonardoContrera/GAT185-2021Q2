@@ -908,7 +908,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 3a630b51baf35814cbc0ad4dcd734c25, type: 3}
     - target: {fileID: 8760380972879693634, guid: e67fd0fce7667dd46bacc70f866e0a17, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: SpaceShip
+      value: KeepYourDistance
       objectReference: {fileID: 0}
     - target: {fileID: 8760380972879693635, guid: e67fd0fce7667dd46bacc70f866e0a17, type: 3}
       propertyPath: m_Type

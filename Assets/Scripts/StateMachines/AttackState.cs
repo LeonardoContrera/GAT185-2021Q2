@@ -7,6 +7,7 @@ public class AttackState : State
     public float attackTimeMin = 0.5f;
     public float attackTimeMax = 2.0f;
     public float meleeDistance = 4.0f;
+    public bool playerDieOnSight = false;
 
     float timer;
     float attackTimer;
@@ -26,9 +27,18 @@ public class AttackState : State
         //player seen
         if(player != null)
         {
+            //
+            //player dies on being spotted
+            if (playerDieOnSight == true)
+            {
+                Health health = player.GetComponent<Health>();
+                health.AddHP(-1000);
+            }
+            //Destroy(player);
+            //
             lastTargetPosition = player.transform.position;
             timer = 1;
-
+            
             attackTimer -= Time.deltaTime;
             if(attackTimer <= 0)
             {
