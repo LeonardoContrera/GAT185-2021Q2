@@ -156,8 +156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raycastTransform: {fileID: 5951541620310870899}
-  distance: 20
-  angle: 50
+  distance: 14
+  angle: 22
   numRaycast: 20
 --- !u!114 &5951541620815680884
 MonoBehaviour:
