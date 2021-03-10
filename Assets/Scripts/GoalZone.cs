@@ -11,7 +11,11 @@ public class GoalZone : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(loadScene);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            GameController.Instance.OnVictoryScreen();
+            
         }
     }
 }

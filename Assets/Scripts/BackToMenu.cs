@@ -8,6 +8,7 @@ public class BackToMenu : MonoBehaviour
     public string loadScene;
     public void ToTitle()
     {
-        SceneManager.LoadScene(loadScene); 
+        GameController.Instance.OnTitleScreen();
+        Destroy(this);
     }
 }

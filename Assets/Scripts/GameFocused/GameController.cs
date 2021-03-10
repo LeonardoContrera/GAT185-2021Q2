@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     public GameObject optionScreen;
     public GameObject pauseScreen;
     public GameObject gameoverScreen;
+    public GameObject victoryScreen;
     public Transition transition;
 
     public int highScore = 0;
@@ -128,13 +129,22 @@ public class GameController : MonoBehaviour
         titleScreen.SetActive(true);
         optionScreen.SetActive(false);
         gameoverScreen.SetActive(false);
-
+        victoryScreen.SetActive(false);
     }
 
     public void OnOptionScreen()
     {
         titleScreen.SetActive(false);
         optionScreen.SetActive(true);
+    }
+
+    public void OnVictoryScreen()
+    {
+        victoryScreen.SetActive(true);
+        timeScale = Time.timeScale;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        Time.timeScale = 0;
     }
     public void OnGameOverScreen()
     {

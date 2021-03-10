@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66af7cbcde05664438573a73e7fefedd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadScene: ProjectUnity
+  loadScene: GameController
 --- !u!114 &310603839
 MonoBehaviour:
   m_ObjectHideFlags: 0
